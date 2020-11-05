@@ -6,7 +6,7 @@ class List(models.Model):
     name = models.CharField(max_length=50)
 
     def __str__(self):  # metodo de como é mostrado na tela
-        return self.name + " de: " + str(self.owner)
+        return self.name #+ " de: " + str(self.owner)
 
 class Item(models.Model):
     name = models.CharField(max_length=50)
