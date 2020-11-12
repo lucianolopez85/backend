@@ -1,4 +1,3 @@
-
 import os
 from pathlib import Path
 
@@ -6,9 +5,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = '58yv3^tq2+v!u74)y6f1pcfn_y!)$f03eweowk#h(bqaldpwm9'
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '18.230.66.2']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -32,8 +31,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    
-    
 ]
 
 ROOT_URLCONF = 'backend.urls'
@@ -93,5 +90,6 @@ STATIC_URL = '/static/'
 CORS_ALLOWED_ORIGINS = [
     
     "http://localhost:3000",
-    "http://127.0.0.1:3000"
+    "http://127.0.0.1:3000",
+    "18.230.66.2"
 ]
